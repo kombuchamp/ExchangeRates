@@ -8,6 +8,6 @@ namespace WpfExchangeRates.FinanceData
 {
     public interface IDynamicsLoader
     {
-        Dictionary<DateTime, decimal> LoadDynamics();
+        Dictionary<DateTime, decimal> LoadDynamics(Currency currency, DateTime initialDate, DateTime terminalDate);
     }
 }
