@@ -25,13 +25,17 @@ namespace WpfExchangeRates
         {
             InitializeComponent();
 
+            // TODO: WPF interface is currently work in progress
+
+            // Create bank instance
             var cbr = new CBR(QueryLanguage.RUS);
 
-            var smth = cbr[1];
-            var smth2 = cbr["USD"];
-            var smth3 = cbr["nothere"];
+            var smth = cbr[1]; // Get currency by index in collection
+            var smth2 = cbr["USD"]; // Get currency by charcode
+            var smth3 = cbr["US__D"]; // Misspell charcode (returns null)
 
-            var dyn = cbr.LoadDynamics(smth, new DateTime(2017, 04, 14), DateTime.Now);
+            // Load currency dynamics between two days
+            var dyn = cbr.LoadDynamics(smth, new DateTime(2017, 04, 14), DateTime.Now); 
 
         }
     }

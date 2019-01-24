@@ -12,6 +12,7 @@ using System.Xml.Linq;
 
 namespace WpfExchangeRates.FinanceData
 {
+    // TODO: Extract bank interface to be able to use other banks
     public class CBR : IDynamicsLoader
     {
         QueryLanguage _queryLanguage;
@@ -100,12 +101,6 @@ namespace WpfExchangeRates.FinanceData
                         Value = x.Element("Value").Value
                     }
                     );
-                //from item in xDoc.Descendants("Record")
-                //        select new
-                //        {
-                //            date = item.Attribute("Date").Value,
-                //            value = item.Element("Value").Value,
-                //        };
 
                 foreach (var item in query)
                 {
@@ -126,9 +121,6 @@ namespace WpfExchangeRates.FinanceData
             get
             {
                 var query = _currencyCollection.Where(x => x.CharCode == charCode);
-                //from item in _currencyCollection
-                //        where item.CharCode == charCode
-                //        select item;
 
                 // Returns null if charCode is invalid. Consider throwing exception?
                 return query.FirstOrDefault();
