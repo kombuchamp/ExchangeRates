@@ -63,7 +63,6 @@ namespace WpfExchangeRates.FinanceData
                     };
 
                     _currencyCollection.Add(currency);
-
                 }
             }
         }

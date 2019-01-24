@@ -31,7 +31,7 @@ namespace WpfExchangeRates
             var smth2 = cbr["USD"];
             var smth3 = cbr["nothere"];
 
-            var dyn = smth.LoadDynamics(cbr, new DateTime(2017, 04, 14), DateTime.Now);
+            var dyn = cbr.LoadDynamics(smth, new DateTime(2017, 04, 14), DateTime.Now);
 
         }
     }

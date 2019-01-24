@@ -18,17 +18,5 @@ namespace WpfExchangeRates.FinanceData
         public string Name { get; set; }
         public decimal Value { get; set; }
         public string ID { get; set; }
-
-        public Dictionary<DateTime, decimal> Dynamics { get; set; } = null;
-
-        public Dictionary<DateTime, decimal> LoadDynamics(IDynamicsLoader loader, DateTime initialDate, DateTime terminalDate)
-        {
-            if (Dynamics != null)
-                return Dynamics;
-            else
-                Dynamics = loader.LoadDynamics(this, initialDate, terminalDate);
-
-            return Dynamics;
-        }
     }
 }
