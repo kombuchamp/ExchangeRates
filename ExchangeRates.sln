@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfExchangeRates", "WpfExchangeRates\WpfExchangeRates.csproj", "{ABEB9636-3963-41B9-8337-682F772371A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangeRates", "ExchangeRates\ExchangeRates.csproj", "{699D6255-580B-4DF8-8F60-46146FF4C832}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{ABEB9636-3963-41B9-8337-682F772371A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABEB9636-3963-41B9-8337-682F772371A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABEB9636-3963-41B9-8337-682F772371A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{699D6255-580B-4DF8-8F60-46146FF4C832}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{699D6255-580B-4DF8-8F60-46146FF4C832}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{699D6255-580B-4DF8-8F60-46146FF4C832}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{699D6255-580B-4DF8-8F60-46146FF4C832}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
